@@ -1,0 +1,7 @@
+input:valid {
+	border-color: chartreuse;
+}
+
+input:invalid{
+    border-color: red;
+}
