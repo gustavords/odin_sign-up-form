@@ -1,7 +1,53 @@
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	height: 100dvh;
+	/* width:  100vw; */
+	/* border: 5px black solid; */
+}
+
+#left {
+	background-color: coral;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	flex: 1;
+}
+
+img {
+	display: flex;
+	height: 100%;
+	width: auto;
+	flex: 1;
+	position: relative;
+}
+
+#banner {
+    background-color: aliceblue;
+	/* position: relative; */
+    display: flex;
+
+}
+
+#banner > p {
+    position: fixed;
+    top: 30%;
+    left:0;
+}
+
+#right {
+	background-color: mediumpurple;
+	flex: 2;
+}
+
 input:valid {
 	border-color: chartreuse;
 }
 
-input:invalid{
-    border-color: red;
+input:invalid {
+	border-color: red;
 }
