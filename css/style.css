@@ -188,10 +188,15 @@ input:invalid {
 }
 
 #footer {
-	background-color: rebeccapurple;
+	/* display: flex; */
+
+	background-color: rgba(0, 0, 0, .0);
+	color: white;
+	font-size: .8rem;
 	margin: 0;
 	padding: 1rem 0rem 0 0;
 	position: absolute;
 	bottom: 0;
 	width: clamp(547.53px, calc(100vw * 0.3333), 640px);
+	text-align: center;
 }
