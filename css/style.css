@@ -125,6 +125,42 @@ fieldset label {
 	flex-direction: column;
 }
 
+#callToAction{
+	padding: 2rem;
+}
+
+#callToAction > button{
+	border: none;
+	border-radius: .45rem;
+	box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);;
+	background-color:#596D48;
+	padding: .5rem 2rem;
+	font-size: 1rem;
+	font-weight: bold;
+
+	color: white;
+
+
+}
+
+#callToAction  p > button  {
+	border: none;
+	background-color:rgb(0,0,0,.0);
+	padding: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #596D48;
+}
+
+#callToAction  p > button:hover{
+	color: blue;
+}
+
+#callToAction  p > button:active:enabled{
+	color: white;
+	text-shadow: 1px 1px 2px white, 0 0 .1em black, 0 0 0.2em black;
+}
+
 input:focus {
 	/* box-shadow: 2px 3px 4px 1px black; */
 	box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.4);
