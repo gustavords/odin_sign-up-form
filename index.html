@@ -9,74 +9,100 @@
 		<title>Sign-up Form</title>
 	</head>
 	<body>
-		<head>
-			<!-- <h1>Form</h1> -->
-		</head>
+		<!-- <head>
+			<h1>Form</h1>
+		</head> -->
 		<main>
 			<div>
 				<img
+					id="background"
 					src="./images/halie-west-25xggax4bSA-unsplash.jpg"
 					alt="background"
 				/>
 				<div id="banner">
+					<img src="./images/odin-lined.png" alt="odin_icon" />
 					<p>ODIN</p>
 				</div>
 				<div id="footer"></div>
 			</div>
-			
+
 			<div id="right">
 				<div id="info">
 					<p>
-						This is <em>not</em> a real online service! But it could
-						be someday. <br />
-						Sign up now and get started! <br /><br />
+						This is <em>not</em> a real online service! You know you
+						need something like this in your life to help you
+						realize your deepest dreams.<br />
+						Sign up <em>now</em> and get started! <br /><br />
 						You <em>know</em> you want to!
 					</p>
 				</div>
 				<form action="">
 					<fieldset>
 						<legend>Lets do this!</legend>
-						<label for="fname">First Name:</label>
-						<input
-							type="text"
-							name="fname"
-							id="fname"
-							placeholder="Ninky"
-							minlength="3"
-							required
-						/>
-						<label for="lname">Last Name:</label>
-						<input
-							type="text"
-							name="lname"
-							id="'name"
-							placeholder="Minjahj"
-							minlength="3"
-							required
-						/>
+						<div class="flex">
+							<label for="fname">FIRST NAME</label>
+							<input
+								type="text"
+								name="fname"
+								id="fname"
+								placeholder="Ninky"
+								minlength="3"
+								required
+							/>
+						</div>
+						<div class="flex">
+							<label for="lname">LAST NAME</label>
+							<input
+								type="text"
+								name="lname"
+								id="'name"
+								placeholder="Minjahj"
+								minlength="3"
+								required
+							/>
+						</div>
+					</fieldset>
+					<!-- phone validation not working -->
+					<fieldset>
+						<div class="flex">
+							<label for="email">EMAIL</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								required
+							/>
+						</div>
+						<div class="flex">
+							<label for="phone">PHONE NUMBER</label>
+							<input
+								type="tel"
+								name="num"
+								id="num"
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+								placeholder="000-000-0000"
+							/>
+						</div>
 					</fieldset>
 					<fieldset>
-						<label for="email">Email:</label>
-						<input type="email" name="email" id="email" required />
-						<label for="phone">Phone Number</label>
-						<input
-							type="tel"
-							name="num"
-							id="num"
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							placeholder="000 000 0000"
-						/>
-					</fieldset>
-					<fieldset>
-						<label for="pwd">Password:</label>
-						<input type="password" name="pwd" id="pwd" required />
-						<label for="comfirmPwd">Confirm Password:</label>
-						<input
-							type="password"
-							name="confirmPwd"
-							id="confirmPwd"
-							required
-						/>
+						<div class="flex">
+							<label for="pwd">PASSWORD</label>
+							<input
+								type="password"
+								name="pwd"
+								id="pwd"
+								required
+							/>
+						</div>
+						<div class="flex">
+							<label for="comfirmPwd">CONFIRM PASSWORD</label>
+							<input
+								type="password"
+								name="confirmPwd"
+								id="confirmPwd"
+								required
+							/>
+						</div>
 					</fieldset>
 				</form>
 				<div id="callToAction">
@@ -88,6 +114,6 @@
 				</div>
 			</div>
 		</main>
-		<footer></footer>
+		<!-- <footer></footer> -->
 	</body>
 </html>
