@@ -17,9 +17,15 @@ head {
 	/* font-family: Arial, Helvetica, sans-serif; */
 }
 
+body{
+	height: 100vh;
+	overflow: hidden; /*this stops the bottom white space*/
+
+}
+
 main {
 	display: flex;
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 0;
